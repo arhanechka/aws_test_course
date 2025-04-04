@@ -1,0 +1,26 @@
+{
+  "name": "deployment-validation-tests",
+  "version": "1.0.0",
+  "description": "A test suite for validating EC2 and S3 deployment requirements",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --config jest.config.js"
+  },
+  "devDependencies": {
+    "aws-sdk": "^2.1692.0",
+    "axios": "^1.8.4",
+    "jest": "^28.1.3"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "verbose": true,
+    "coverageThreshold": {
+      "global": {
+        "branches": 80,
+        "functions": 80,
+        "lines": 80,
+        "statements": 80
+      }
+    }
+  }
+}
